@@ -3,6 +3,7 @@ package actividades;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import personas.Usuario;
 
 
 
@@ -49,7 +50,7 @@ public class Actividad {
     
     public boolean cuposDisponibles(){
         for (int i = 0; usuarios.length < 10; i++) {
-            if (clientes[i] == null) {
+            if (usuarios[i] == null) {
                 return true;
             }
         }
@@ -59,7 +60,7 @@ public class Actividad {
     public void inscribirUsuario(Usuario usuario){
         for (int i = 0; i < usuarios.length; i++) {
             if (usuarios[i] == null) {
-                clientes[i] = usuario;
+                usuarios[i] = usuario;
                 
             }
             
