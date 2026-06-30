@@ -6,6 +6,7 @@ package prestamos;
 
 import materialesBibliograficos.MaterialBibliografico;
 import java.time.LocalDate;
+import personas.Usuario;
 
 
 public class Prestamo {
@@ -23,15 +24,15 @@ public class Prestamo {
         return materiales;
     }
 
-    public localDate getFechaPrestamo() {
+    public LocalDate getFechaPrestamo() {
         return fechaPrestamo;
     }
 
-    public localDate getFechaMaximaDevolucion() {
+    public LocalDate getFechaMaximaDevolucion() {
         return fechaMaximaDevolucion;
     }
 
-    public localDate getFechaDevolucion() {
+    public LocalDate getFechaDevolucion() {
         return fechaDevolucion;
     }
 
